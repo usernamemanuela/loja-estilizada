@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Vendas</title>
+    <link rel="stylesheet" href="paginadevendas.css">
+    </head>
+    <body><center>
+        <header>
+            <div>
+              
+                <h1>DOÇURAS DO MEL</h1>
+            </div>
+            <nav>
+                <a href="index.html">Página Inicial</a>
+                <a href="paginadevendas.html">Página de vendas</a>
+                <a href="ctrl-estoque.html">Controle de Estoque</a>
+                <a href="add-produto.html">Adicionar Produto</a>
+                <a href="historicodevendas.html">Histórico de Vendas</a>
+                <a href="funcionarios.html">Funcionários</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Registro de Compras</h1>
+    
+            <form>
+                <div>
+                    <label for="product">Produto:</label>
+                    <input type="text" id="product" placeholder="Nome do produto" required>
+                </div>
+    
+                <div>
+                    <label for="price">Preço (R$):</label>
+                    <input type="number" id="price" step="0.01" placeholder="Preço do produto" required>
+                </div>
+    
+                <div>
+                    <label>Forma de pagamento:</label>
+                    <div>
+                        <label><input type="radio" name="payment" value="dinheiro"> Dinheiro</label>
+                        <label><input type="radio" name="payment" value="cartao"> Cartão</label>
+                    </div>
+                </div>
+    
+                <button type="submit">Finalizar Compra</button>
+            </form>
+        </main>
+
+        <footer><center>
+            <p>&copy; 2024 Doçuras do Mel. Todos os direitos reservados.</p>
+        </footer>
+    </body></center>
+    </html>

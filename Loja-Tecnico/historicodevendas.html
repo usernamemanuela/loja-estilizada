@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Vendas</title>
+    <link rel="stylesheet" href="historico.css">
+</head>
+<body><center>
+
+    <header>
+        <div>
+          
+            <h1>DOÇURAS DO MEL</h1>
+        </div>
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="paginadevendas.html">Página de vendas</a>
+            <a href="ctrl-estoque.html">Controle de Estoque</a>
+            <a href="add-produto.html">Adicionar Produto</a>
+            <a href="historicodevendas.html">Histórico de Vendas</a>
+            <a href="funcionarios.html">Funcionários</a>
+        </nav>
+    </header>
+
+    <header>
+        <h1>Histórico de Vendas</h1>
+    </header>
+
+    <main>
+        <!-- Campo de filtro por data -->
+        <section class="filter-section">
+            <label for="filter-date">Filtrar por data (ex: 1 de outubro de 2024):</label>
+            <input type="text" id="filter-date" placeholder="Digite a data" onkeyup="filterSales()">
+        </section>
+
+        <!-- Lista de vendas -->
+        <section class="sales-history">
+            <table id="sales-table">
+                <thead>
+                    <tr>
+                        <th>Horário</th>
+                        <th>Funcionário</th>
+                        <th>Valor Total (R$)</th>
+                        <th>Forma de Pagamento</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>14:15</td>
+                        <td>Manuela Justin</td>
+                        <td>799.00</td>
+                        <td>Cartão</td>
+                        <td>25 de Junho de 2024</td>
+                    </tr>
+                    <tr>
+                        <td>10:30</td>
+                        <td>Ivan Costa</td>
+                        <td>86,00</td>
+                        <td>Cartão</td>
+                        <td>14 de agosto de 2024</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td>Silvano Justin</td>
+                        <td>569.00</td>
+                        <td>Dinheiro</td>
+                        <td>3 de outubro de 2024</td>
+                    </tr>
+                    <tr>
+                        <td>10:30</td>
+                        <td>Fabiane Justin</td>
+                        <td>159.00</td>
+                        <td>Dinheiro</td>
+                        <td>1 de outubro de 2024</td>
+                    </tr>
+                    <tr>
+                        <td>14:15</td>
+                        <td>Vitória Bortoloti</td>
+                        <td>2.099,99</td>
+                        <td>Cartão</td>
+                        <td>2 de outubro de 2024</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td>Luiza Reis</td>
+                        <td>799.00</td>
+                        <td>Dinheiro</td>
+                        <td>3 de outubro de 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer><center>
+        <p>&copy; 2024 Doçuras de Mel. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para filtrar vendas por data
+        function filterSales() {
+            const input = document.getElementById("filter-date").value.toLowerCase();
+            const table = document.getElementById("sales-table");
+            const tr = table.getElementsByTagName("tr");
+
+            for (let i = 1; i < tr.length; i++) {
+                const td = tr[i].getElementsByTagName("td")[4]; // Coluna da data
+                if (td) {
+                    const txtValue = td.textContent || td.innerText;
+                    if (txtValue.toLowerCase().indexOf(input) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body></center>
+</html>

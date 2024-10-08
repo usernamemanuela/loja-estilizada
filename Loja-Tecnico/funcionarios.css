@@ -1,0 +1,90 @@
+/* controle.css */
+
+/* Reset básico */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando o corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(248, 180, 34);
+    color: black;
+}
+
+header {
+    background: rgb(248, 180, 34);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+nav {
+    background: #fc9700;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #fdae38;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background:  white; /* Cor de fundo do conteúdo principal */
+    border-radius: 8px;
+    box-shadow:  rgb(248, 180, 34);
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid  rgb(248, 180, 34);
+}
+
+table th {
+    background:  rgb(248, 180, 34); /* Cor do cabeçalho da tabela */
+}
+
+table tr:hover {
+    background:  #fdae38; /* Efeito hover na tabela */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #fc9700; /* Cor do rodapé */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+

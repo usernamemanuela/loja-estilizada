@@ -1,0 +1,95 @@
+/* adc.css */
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(248, 180, 34);
+    color: black;
+}
+
+
+/* Estilo do cabeçalho */
+header {
+    background-color: rgb(248, 180, 34);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #fc9700;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #fdae38;
+}
+
+
+/* Estilo do conteúdo principal */
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo das seções do formulário */
+section {
+    margin: 20px 0;
+}
+
+/* Estilo dos rótulos e campos do formulário */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="url"],
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo do botão */
+button {
+    background-color:  #fc9700;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color:  #fdae38;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color:  #fc9700;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
